@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoo Escape</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -18,8 +19,8 @@
             <h1>"Zoo Escape"</h1>
             <h2>Can you escape the zoo and reach Cotton Candy Land?</h2>
         </header>
-        <div class="img">
-            <img src="replit.demo.jpg">
+        <div class="replit">
+            <iframe src="https://replit.com/@holycow44/zoo-escape?embed=true" width="900" height="500"></iframe>
         </div>
 
 
@@ -48,20 +49,20 @@
                 you from ever reaching Cotton Candy Land.</p>
 
             <p>Get to know our four brave animals, ready to make their escape</p>
-            <img src="ricky.demo.png" width="250" class="float-left" /><br>
+            <img src="ricky.main.png" width="250" class="float-left" /><br>
             <p class="bold_text">Ricky the Rabbit - Small, speedy, and ever so cute! Everyone loves Ricky</p>
             <p class="theme-color">BEST ABILITIES: Run, Jump, Hide</p><br><br><br><br>
             
-            <img src="lionel.demo.jpg" width="250" class="float-right" />
+            <img src="lionel.main.png" width="250" class="float-right" />
             <p class="bold_text">lionel the Leopard - A fearsome old cat. Very fast and agile</p>
             <p class="theme-color">BEST ABILITIES: Jump, Scare, Climb</p><br>
             
-            <img src="ellie.demo.jpg" width="200" class="float-left" />
+            <img src="ellie.main.png" width="200" class="float-left" />
             <p class="bold_text">Ellie the Elephant - A kind-natured girl, but intimidating. Large and heavy, but slow
                 and not very mobile</p>
             <p class="theme-color">BEST ABILITIES: Charge, Scare, Swim </p><br>
             
-            <img src="sid.demo.png" width="200" class="float-right" />
+            <img src="sid.main.png" width="200" class="float-right" />
             <p class="bold_text">Sid the Snake - Keep an eye on this one! His small stature and flexible, 'winding' body
                 means he's
                 difficult to spot and can get to hard to reach places</p>
@@ -110,7 +111,7 @@
                     written at the same time.</li><br>
                 <li>File sharing - At this stage we made sure that everyone had a copy of the first level, character selection, and the classes/objects - the building blocks for the rest of the game. Only then could we really speed up the development process as well as start properly 
                     testing each other's code.</li><br>
-                <li>testing - TESTING, TESTING, TESTING. All members of the team played through every animal character and every choice to test for incorrect outcomes for choices and user input value errors during every development stage. Because of this, we caught more than a few bugs 
+                <li>esting - TESTING, TESTING, TESTING. All members of the team played through every animal character and every choice to test for incorrect outcomes for choices and user input value errors during every development stage. Because of this, we caught more than a few bugs 
                     before it was too late to make the required changes to the code.</li><br>
                 <li>Game completion v1 - Once the first version of the entire game code was finished, we could then properly test and assess the way it functions and fits the 
                     brief - playing for less than 5 mins etc.</li><br>
@@ -183,26 +184,49 @@
         </div>
     </div>
     </div>
-
-    <div class="center_text">
+    <div class="center_text" id="scroll-container">
         <br>
         <h2>Some Stellar Reviews</h2>
-
-        <p>"I just couldn't believe the way my journey with Lionel ended" - Alex</p>
-
-        <p>"In suspense from beginning till end. I'm literally shaking right now" - Lisa</p>
-
-        <p>"Blue Team Studios should be given an oscar - or something - for this masterpiece in writing" - Some guy,
-            probably...</p>
-
-        <p>"It was alright" - Phil</p><br>
+        
+        <div id="scroll-text">
+            <p>"I just couldn't believe the way my journey with Lionel ended" - Alex
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </p>
+            <p>"In suspense from beginning till end. I'm literally shaking right now" - Lisa
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </p>
+            <p>"Blue Team Studios should be given an oscar - or something - for this masterpiece in writing" - Some guy,
+                probably...
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </p>
+            <p>"It was alright" - Phil
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </p>
+        </div>
     </div>
 
     <div class="center_text">
-        <a href="#top" class="about_game_text">CLICK HERE to make your escape</a>
+        <a href="#top" class="about_game_text" id="top-link">CLICK HERE to make your escape</a>
     </div>
 
     <footer class="center_text">
         <br>
         <p>&copy; 2023 Zoo Escape. Blue Team Studios. All rights reserved.</p>
     </footer>
+</body>
+
+</html>

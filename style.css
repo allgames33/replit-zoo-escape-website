@@ -116,13 +116,15 @@ li {
 
 /* james */
 
+
 .background1{
     background-image: url("91810.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(244, 237, 237, 0.3);
-    opacity: 0.6;
+    border-radius: 4px;
+    border: 5px solid white;
 }
 
 header{
@@ -138,6 +140,7 @@ header{
 
 .center_text {
     text-align: center;
+    margin-top: 30px;
 }
 
 .bold_text {
@@ -146,26 +149,27 @@ header{
     color: darkgreen;
 }
 
-.img {
-    box-shadow: 0px 0px 5px #fff;
-    width: 400;
-    height: 250;
+.replit {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     padding: 20px;
+    text-align: center;
 }
 
 .float-left {
     float: left; 
     margin-right: 10px;
     margin-bottom: 100px;
+    width: 100px;
+    height:100px;
 }
 
 .float-right {
     float: right;
     margin-left: 10px;
     margin-bottom: 100px;
+    width: 100px;
+    height:100px;
 }
 
 .theme-color {
@@ -183,3 +187,64 @@ a {
 .opaque {
     opacity: 1;
 }
+
+.checked{
+    color: orange;
+}
+
+#top-link {
+    text-decoration: none;
+    color: darkgreen;
+    background-color: white;
+    border: 5px solid darkgreen;
+    border-radius: 5px;
+}
+
+/* Eren Scroll Feature */
+
+#scroll-container {
+    border: 3px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+    }
+    
+    #scroll-text {
+        display: inline-flex;
+        white-space: nowrap;
+    /* animation properties */
+    -moz-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    
+    -moz-animation: my-animation 60s linear infinite;
+    -webkit-animation: my-animation 60s linear infinite;
+    animation: my-animation 60s linear infinite;
+    }
+    
+    #scroll-text p {
+        padding-right: 100px;
+    }
+    
+    /* for Firefox */
+    @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(50%); }
+    to { -moz-transform: translateX(-100%); }
+    }
+    
+    /* for Chrome */
+    @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(50%); }
+    to { -webkit-transform: translateX(-100%); }
+    }
+    
+    @keyframes my-animation {
+    from {
+      -moz-transform: translateX(50%);
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%); }
+    }
